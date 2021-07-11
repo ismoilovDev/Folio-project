@@ -45,6 +45,9 @@ body.dark {
 body.dark .drop-down .drop-down-item:hover a {
     color: var(--blue) !important;
 }
+body.dark .navbar .navbar-items li a {
+    color: var(--light) !important;
+}
 a {
     text-decoration: none;
 }
@@ -193,6 +196,7 @@ header.dark .nav-items a.link , header.dark a, header.dark i {
 header.dark .drop-li .drop-down .drop-down-item a, .mobile-menu a.link, .mobile-menu .mobile-menu-logo a, .mobile-menu .hide-icon i, .mobile-menu a.link i, .mobile-menu .menu-drop-down .menu-drop-down-item a {
     color: var(--dark) !important;
 }
+
 .header-container {
     width: 100%;
     padding-right: 1rem;
