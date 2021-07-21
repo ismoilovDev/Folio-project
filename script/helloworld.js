@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
         hideMenu = document.querySelector('#hide-mobile-menu'),
         dropToggle = document.querySelector('#dropToggle'),
         dropToggle1 = document.querySelector('#dropToggle1'),
-        shoSign = document.querySelector('#show-sign'),
+        showSign = document.querySelector('#show-sign'),
         hideSign = document.querySelector('#hide-sign-up-icon'),
         signUp = document.querySelector('.sign-up'),
-        signA = document.querySelector('.sign-a'),
+        signA = document.querySelectorAll('.for-contact'),
         header = document.querySelector('header');
 
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         dropDown.classList.toggle('active');
         dropIcon.classList.toggle('active');
-        document.querySelector('.menu-drop-li').classList.toggle('active');
+        document.querySelector('.menu-drop-li').classList.add('active');
 
     }
     function showDropDown1() {
@@ -84,12 +84,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function showSignUp() {
         signUp.classList.add('active');
     }
-    shoSign.addEventListener('click', showSignUp);
-    
+    showSign.addEventListener('click', showSignUp);
+
+    signA.forEach(item => item.addEventListener('click', showSignUp))
      
 
     function removeSignUp() {
         signUp.classList.remove('active');
     }
     hideSign.addEventListener('click', removeSignUp);
+    const prev = document.querySelector('.slick-prev').textContent = ' < '
+    const next = document.querySelector('.slick-next').textContent = ' > '
 })
+$('.slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
+  
