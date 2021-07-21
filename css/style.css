@@ -597,7 +597,7 @@ header.dark .drop-down .drop-down-item:hover a {
     height: 220px;
 }
 .about-main .slider .item img {
-    /* padding: 0 15px; */
+    padding: 0 10px;
     height: 170px;
     object-fit: cover;
 }
@@ -1025,7 +1025,7 @@ header.dark .drop-down .drop-down-item:hover a {
         height: 350px;
     }
     .about-main .slider .item img {
-        padding: 0 15px;
+        /* padding: 0 15px; */
         height: 300px;
         object-fit: cover;
     }
